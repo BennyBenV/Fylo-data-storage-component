@@ -1,0 +1,161 @@
+body{
+    background-color: hsl(229, 57%, 11%);
+}
+
+#footer{
+    position:fixed;
+    bottom:0;
+    right: 0;
+    width: 100%; 
+    height:420px;
+    background: url(images/bg-desktop.png) no-repeat center center;
+    z-index: 1;
+
+}
+
+#center{
+    margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#fylo{
+    background-color: hsl(228, 56%, 26%);
+    width: 350px;
+    height: 200px;
+    z-index: 2;
+    margin-right: 50px;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+#logo{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#docs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    margin-left: 40px
+}
+
+.documents, .folder, .upload{
+    height: 20px;
+    padding: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+
+.documents, .folder{
+    height: 25px;
+}
+
+.used{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: white;
+}
+
+#stockage{
+    background-color: hsl(228, 56%, 26%);
+    width: 600px;
+    height: 150px;   
+    z-index: 2;
+    border-radius: 10px;
+    margin-top: 51px;
+
+}
+
+
+
+
+.progressbar-wrapper{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 15px;
+    width: 80%;
+    margin-left: 40px;
+    z-index: 4;        
+}
+
+.progress_bar{
+    background-color: hsl(229, 57%, 11%);
+    color: white;
+    padding: 0.1rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.progress_bar[title="pourcentage"]{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+}
+
+.progress_bar{
+    width : 81.5%;
+}
+
+.minGB{
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 40px;
+    color: white;
+
+
+}
+
+.maxGB{
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 80px;
+    color: white;
+
+
+}
+
+.point{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 375px;
+    z-index: 3;
+}
+
+.bubble{
+    width: 80px;
+    height: 20px;
+    background: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18x;
+    border-radius: 10px;
+    position: relative;
+    float: right;
+    margin-right: 85px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.bubble::before{
+    content: "";
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 21px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 29px solid transparent;
+    right: 0px;
+}
